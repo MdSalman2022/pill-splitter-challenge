@@ -173,7 +173,6 @@ export default function App() {
     setDrag(undefined);
   };
 
-  // Small helper kept (not fully inlined) but minimal
   const makePiece = (
     base: Pill,
     x: number,
@@ -294,7 +293,6 @@ export default function App() {
           continue;
         }
 
-        // If click is inside but not splittable, nudge pill
         if (insideX && !doX) {
           pill.x =
             px < pill.x + pill.width / 2
